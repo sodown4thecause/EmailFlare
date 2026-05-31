@@ -1,15 +1,20 @@
 import fs from "fs/promises";
+import path from "path";
+import { fileURLToPath } from "url";
 import esbuild from "esbuild";
 import { getStaticAssets } from "./assets.js";
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const ASSETS = await getStaticAssets("../app/dist");
 
-// add dev config
+// add config
 if (process.argv.includes("--config")) {
+    const configPath = path.resolve(__dirname, "../../app/config.json");
+    const configContent = await fs.readFile(configPath, "utf8");
     ASSETS.push({
         path: "/assets/config.js",
         contentType: "text/javascript",
-        data: "export default {}",
+        data: `export default ${configContent}`,
         encoding: "utf8"
     });
 }

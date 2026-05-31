@@ -1,8 +1,17 @@
 {
     "senders": [
-        "Customer Support <support@yourdomain.com>",
-        "Hello <hello@yourdomain.com>",
-        "Ceo <ceo@yourdomain.com>"
+        "Liam <liam@flowintent.com>",
+        "Hello <hello@flowintent.com>",
+        "Support <support@flowintent.com>",
+        "Liam <liam@dontkillmyvibe.dev>",
+        "Hello <hello@dontkillmyvibe.dev>",
+        "Support <support@dontkillmyvibe.dev>",
+        "Liam <liam@artificialintelligentsia.co>",
+        "Hello <hello@artificialintelligentsia.co>",
+        "Support <support@artificialintelligentsia.co>",
+        "Liam <liam@leadspeed.co>",
+        "Hello <hello@leadspeed.co>",
+        "Support <support@leadspeed.co>"
     ],
     "customSender": false
 }

@@ -10,15 +10,5 @@
     "devDependencies": {
         "typescript": "^5.1.6",
         "zx": "^7.2.3"
-    },
-    "pnpm": {
-        "peerDependencyRules": {
-            "ignoreMissing": [
-                "@types/node",
-                "@babel/core",
-                "prop-types",
-                "rollup"
-            ]
-        }
     }
 }
